@@ -35,7 +35,6 @@
         <disruptor.version>3.3.11</disruptor.version>
         <jackson.version>2.13.3</jackson.version>
 
-
         <!-- new dependencies required for jigsaw (Java 9 and up) -->
         <asm.version>9.3</asm.version>                  <!-- 7.0 is minimally required version for compiler plugin with version 11, 9.1 for Java 17 -->
         <javassist.version>3.29.0-GA</javassist.version>
@@ -115,7 +114,6 @@
         </developer>
     </developers>
 
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -168,7 +166,6 @@
                 <artifactId>junit-jupiter-engine</artifactId>
                 <version>${junit5.version}</version>
             </dependency>
-
 
             <!-- jakarta annotation -->
             <dependency>
@@ -605,6 +602,7 @@
             </releases>
         </repository>
     </repositories>
+    
     <pluginRepositories>
         <pluginRepository>
             <id>codehaus-snapshots</id>
@@ -637,4 +635,18 @@
             </releases>
         </pluginRepository>
     </pluginRepositories>
+
+    <profiles>
+        <profile>
+            <id>github</id>
+            <distributionManagement>
+                <repository>
+                    <id>github</id>
+                    <name>GitHub Packages</name>
+                    <url>https://maven.pkg.github.com/arvato-systems-jacs/jpaw-se-parent</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+
 </project>
