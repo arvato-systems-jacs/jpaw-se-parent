@@ -1,5 +1,5 @@
 # Build and publish package when release is created.
-# Takes name of release for versioning.
+# SNAPSHOT suffix will be removed.
 
 name: Publish Release
 
@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  publish:
 
     runs-on: ubuntu-latest
     permissions:
@@ -28,7 +28,7 @@ jobs:
 
     - name: Publish to GitHub Packages
       run: |
-        mvn versions:set -DnewVersion=${{ github.event.release.name }}
+        mvn versions:set -DremoveSnapshot
         mvn -Pgithub deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
