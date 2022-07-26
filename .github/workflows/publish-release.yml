@@ -22,8 +22,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'corretto'
-        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
@@ -31,6 +29,6 @@ jobs:
     - name: Publish to GitHub Packages
       run: |
         mvn versions:set -DnewVersion=${{ github.event.release.name }}
-        mvn -Pgithub deploy -s $GITHUB_WORKSPACE/settings.xml
+        mvn -Pgithub deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
