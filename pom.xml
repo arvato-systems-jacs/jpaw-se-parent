@@ -3,7 +3,7 @@
 
     <groupId>de.jpaw</groupId>
     <artifactId>jpaw-se-parent</artifactId>
-    <version>3.1.1-SNAPSHOT</version>
+    <version>3.1.1</version>
     <packaging>pom</packaging>
 
     <description>Common configuration settings / revision defaults for jpaw.de Java SE projects (+ Jakarta)</description>
@@ -119,7 +119,7 @@
 
     <scm>
 	  <developerConnection>scm:git:https://github.com/arvato-systems-jacs/jpaw-se-parent.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>v3.1.1</tag>
     </scm>
 
     <dependencyManagement>
