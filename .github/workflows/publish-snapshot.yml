@@ -16,7 +16,7 @@ concurrency:
 env:
   JAVA_VERSION_TO_USE: '11'
   JAVA_DISTRI_TO_USE: 'corretto'
-  DEPLOY_RETRY: 10
+  DEPLOY_RETRY: 5
 
 jobs:
   publish:
@@ -37,6 +37,6 @@ jobs:
         cache: maven
 
     - name: Build and Publish
-      run: mvn -B -Pgithub -DdeployAtEnd=true -DretryFailedDeploymentCount=${{ env.DEPLOY_RETRY }} deploy
+      run: mvn -B -U -T 1C -Pgithub -DretryFailedDeploymentCount=${{ env.DEPLOY_RETRY }} deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
