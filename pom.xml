@@ -20,27 +20,27 @@
         <min-maven.version>3.8.5</min-maven.version>
 
         <!-- logging -->
-        <slf4j.version>2.0.3</slf4j.version>            <!-- http://www.slf4j.org/ -->
+        <slf4j.version>2.0.5</slf4j.version>            <!-- http://www.slf4j.org/ -->
         <logback.version>1.4.3</logback.version>        <!-- http://logback.qos.ch/ -->
         <log4j.version>1.2.17</log4j.version>           <!-- Log4j Rev 1 (deprecated, not compatible with Java 9+) -->
         <log4j2.version>2.18.0</log4j2.version>
 
         <!-- core tools used -->
         <guava.version>31.1-jre</guava.version>         <!-- http://code.google.com/p/guava-libraries/, 20 is the last Java 6 compatible one -->
-        <xtext.version>2.27.0</xtext.version>           <!-- version of xtext, xtend, and the related libs -->
+        <xtext.version>2.29.0</xtext.version>           <!-- version of xtext, xtend, and the related libs -->
         <jodatime.version>2.11.2</jodatime.version>
         <jsap.version>2.1</jsap.version>
         <reflections.version>0.9.10</reflections.version>  <!-- 0.9.11 got issues while scanning -->
-        <icu.version>71.1</icu.version>
+        <icu.version>72.1</icu.version>
         <disruptor.version>3.3.11</disruptor.version>
-        <jackson.version>2.13.4</jackson.version>
-        <jackson-databind.version>2.13.4.2</jackson-databind.version> <!-- separate version due to frequent CVE updates which do not release the full set -->
+        <jackson.version>2.14.1</jackson.version>
+        <jackson-databind.version>2.14.1</jackson-databind.version>       <!-- separate version due to frequent CVE updates which do not release the full set -->
         <commons-text.version>1.10.0</commons-text.version>               <!-- not used in t9t, but DM made to cover for transitive dependencies -->
         <commons-lang3.version>3.12.0</commons-lang3.version>             <!-- regularly updated again -->
         <commons-collections4.version>4.4</commons-collections4.version>
 
         <!-- new dependencies required for jigsaw (Java 9 and up) -->
-        <asm.version>9.3</asm.version>                  <!-- 7.0 is minimally required version for compiler plugin with version 11, 9.1 for Java 17 -->
+        <asm.version>9.4</asm.version>                  <!-- 7.0 is minimally required version for compiler plugin with version 11, 9.1 for Java 17 -->
         <javassist.version>3.29.2-GA</javassist.version>
         <cglib.version>3.3.0</cglib.version>
         <error-prone.version>2.14.0</error-prone.version>
@@ -59,10 +59,10 @@
         <!-- testing support -->
         <junit.version>4.13.2</junit.version>
         <junit5.version>5.9.1</junit5.version>
-        <spotbugs.version>4.7.2</spotbugs.version>
+        <spotbugs.version>4.7.3</spotbugs.version>
 
         <!--  benchmarking -->
-        <jmh.version>1.35</jmh.version>               <!-- http://openjdk.java.net/projects/code-tools/jmh/ -->
+        <jmh.version>1.36</jmh.version>               <!-- http://openjdk.java.net/projects/code-tools/jmh/ -->
 
         <!-- org.apache.maven.plugins (maven-xxx-plugin) -->
         <exec.plugin.version>3.0.0</exec.plugin.version>
@@ -70,9 +70,9 @@
         <compiler.plugin.version>3.10.1</compiler.plugin.version>
         <clean.plugin.version>3.2.0</clean.plugin.version>
         <enforcer.plugin.version>3.1.0</enforcer.plugin.version>
-        <jar.plugin.version>3.2.0</jar.plugin.version>
+        <jar.plugin.version>3.3.0</jar.plugin.version>
         <war.plugin.version>3.3.2</war.plugin.version>
-        <javadoc.plugin.version>3.3.1</javadoc.plugin.version>
+        <javadoc.plugin.version>3.4.1</javadoc.plugin.version>
         <shade.plugin.version>3.2.4</shade.plugin.version>
         <source.plugin.version>3.2.1</source.plugin.version>
         <surefire.plugin.version>3.0.0-M7</surefire.plugin.version>   <!-- requires at least M3 for JDK11 -->
