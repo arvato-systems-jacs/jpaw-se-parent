@@ -43,7 +43,7 @@
         <asm.version>9.5</asm.version>                  <!-- 7.0 is minimally required version for compiler plugin with version 11, 9.1 for Java 17 -->
         <javassist.version>3.29.2-GA</javassist.version>
         <cglib.version>3.3.0</cglib.version>
-        <error-prone.version>2.14.0</error-prone.version>
+        <error-prone.version>2.18.0</error-prone.version>
 
         <!-- Jakarta (all with jakarta.* namespaces now, no more javax.) -->
         <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
@@ -236,6 +236,11 @@
                 <artifactId>error_prone_core</artifactId>
                 <version>${error-prone.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_annotations</artifactId>
+                <version>${error-prone.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -334,6 +339,7 @@
                             <path>
                                 <groupId>com.google.errorprone</groupId>
                                 <artifactId>error_prone_core</artifactId>
+                                <version>${error-prone.version}</version>
                             </path>
                         </annotationProcessorPaths>
 -->
