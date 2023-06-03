@@ -73,7 +73,7 @@
         <jar.plugin.version>3.3.0</jar.plugin.version>
         <war.plugin.version>3.3.2</war.plugin.version>
         <javadoc.plugin.version>3.5.0</javadoc.plugin.version>
-        <shade.plugin.version>3.2.4</shade.plugin.version>
+        <shade.plugin.version>3.4.1</shade.plugin.version>
         <source.plugin.version>3.3.0</source.plugin.version>
         <surefire.plugin.version>3.1.0</surefire.plugin.version>   <!-- requires at least M3 for JDK11 -->
         <failsafe.plugin.version>3.1.0</failsafe.plugin.version>
